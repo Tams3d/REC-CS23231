@@ -1,0 +1,39 @@
+
+# Executables / binaries
+*.exe
+*.out
+*.o
+*.obj
+a.out
+
+
+# Temporary files
+temp*.c
+temp*.cpp
+temp*.py
+*.tmp
+*.log
+
+
+# C / C++ build folders
+build/
+bin/
+obj/
+
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.code-workspace
+.clangd
+
+
+# OS files
+.DS_Store
+Thumbs.db
