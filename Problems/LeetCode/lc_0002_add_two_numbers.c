@@ -28,6 +28,8 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 
         struct ListNode *new_node =
             (struct ListNode *)malloc(sizeof(struct ListNode));
+        if (new_node == NULL)
+            return NULL;
         new_node->val = sum % 10;
         new_node->next = NULL;
 

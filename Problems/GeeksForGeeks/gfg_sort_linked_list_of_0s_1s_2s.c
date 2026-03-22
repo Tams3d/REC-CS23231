@@ -11,6 +11,9 @@ struct Node *sortLinkedList(struct Node *head) {
     }
 
     struct Node zero_dummy, one_dummy, two_dummy;
+    zero_dummy.next = NULL;
+    one_dummy.next = NULL;
+    two_dummy.next = NULL;
     struct Node *zero = &zero_dummy;
     struct Node *one = &one_dummy;
     struct Node *two = &two_dummy;
@@ -30,8 +33,8 @@ struct Node *sortLinkedList(struct Node *head) {
         temp = temp->next;
     }
 
-    one->next = two_dummy.next;
     zero->next = one_dummy.next;
+    one->next = two_dummy.next;
     two->next = NULL;
 
     return zero_dummy.next;
