@@ -16,9 +16,9 @@
 
 My implementations of Data Structures in C - written as I learn, not after. Each file reflects what I understood when I wrote it.
 
-Most files are straightforward implementations. Some may follow different approaches where I was figuring out why one is cleaner than the other - dummy node vs special-casing head, pointer-to-pointer traversal vs index walking, iterative vs recursive. Code style is consistent throughout using `.clang-format` with the LLVM standard.
+Most files are straightforward implementations. Some may follow different approaches where I was figuring out why one is cleaner than the other - dummy node vs special-casing head, pointer-to-pointer traversal vs index walking, iterative vs recursive.
 
----
+Code style is consistent throughout using `.clang-format` with the LLVM standard.
 
 ## Table of Contents
 
@@ -27,13 +27,14 @@ Most files are straightforward implementations. Some may follow different approa
 - [Dynamic Memory Allocation](#dynamic-memory-allocation)
 - [Linked List](#linked-list)
   - [Singly Linked List](#singly-linked-list)
+- [Stacks](#stacks)
+  - [Implementation](#implementation)
+- [Extra](#extra)
 - [Problems](#problems)
 - [Language and Style](#language-and-style)
 - [Legal](#legal)
 - [License](#license)
 - [About](#about)
-
----
 
 ## Pointers
 
@@ -49,8 +50,6 @@ Most files are straightforward implementations. Some may follow different approa
 | [`array_of_pointers.c`](Pointers/array_of_pointers.c) | Array where each element is a pointer |
 | [`double_pointer.c`](Pointers/double_pointer.c) | Pointer to pointer - `**ptr` |
 
----
-
 ## Structures
 
 [`Structures/`](Structures/)
@@ -61,8 +60,6 @@ Most files are straightforward implementations. Some may follow different approa
 | [`structures_functions.c`](Structures/structures_functions.c) | Passing structs to functions - by value and by pointer |
 | [`selfref_structure.c`](Structures/selfref_structure.c) | Self-referential struct - a struct with a pointer to itself, the basis of linked lists |
 
----
-
 ## Dynamic Memory Allocation
 
 [`DynamicMemoryAllocation/`](DynamicMemoryAllocation/)
@@ -72,8 +69,6 @@ Most files are straightforward implementations. Some may follow different approa
 | [`malloc.c`](DynamicMemoryAllocation/malloc.c) | `malloc` - allocates uninitialized memory |
 | [`calloc.c`](DynamicMemoryAllocation/calloc.c) | `calloc` - allocates zero-initialized memory |
 | [`realloc.c`](DynamicMemoryAllocation/realloc.c) | `realloc` - resizes an existing allocation, preserving data |
-
----
 
 ## Linked List
 
@@ -93,15 +88,29 @@ Most files are straightforward implementations. Some may follow different approa
 | [`delete_last.c`](LinkedList/SinglyLinkedList/delete_last.c) | Delete tail node |
 | [`delete_at_pos.c`](LinkedList/SinglyLinkedList/delete_at_pos.c) | Delete at given 1-based position |
 
-#### Extra
+## Stacks
+
+[`Stacks/`](Stacks/)
+
+### Implementation
 
 | File | Description |
 |------|-------------|
-| [`reverse_list.c`](LinkedList/extra/reverse_list.c) | Iterative three pointer |
-| [`length_of_list.c`](LinkedList/extra/length_of_list.c) | Length of a linked list |
-| [`floyd_cycle_detection.c`](LinkedList/extra/floyd_cycle_detection.c) | Cycle detection - Floyd's tortoise and hare |
+| [`stack_using_array.c`](Stacks/stack_using_array.c) | Stack implementation using array - push, pop, peek, isEmpty, isFull |
+| [`stack_using_linkedlist.c`](Stacks/stack_using_linkedlist.c) | Stack implementation using linked list - dynamic push/pop operations |
 
----
+## Extra
+
+Advanced algorithms and applications using the implemented data structures.
+
+| File | Topic | Description |
+|------|-------|-------------|
+| [`reverse_list.c`](LinkedList/extra/reverse_list.c) | Linked List | Iterative three pointer reversal |
+| [`length_of_list.c`](LinkedList/extra/length_of_list.c) | Linked List | Length of a linked list |
+| [`floyd_cycle_detection.c`](LinkedList/extra/floyd_cycle_detection.c) | Linked List | Cycle detection - Floyd's tortoise and hare |
+| [`middle_node.c`](LinkedList/extra/middle_node.c) | Linked List | Find middle node using slow/fast pointers |
+| [`reverse_string.c`](Stacks/extra/reverse_string.c) | Stack | Reverse a string using stack (see also [GFG solution](Problems/GeeksForGeeks/gfg_reverse_string_using_stacks.c)) |
+| [`reverse_linkedlist.c`](Stacks/extra/reverse_linkedlist.c) | Stack | Reverse a linked list using stack (see also [GFG solution](Problems/GeeksForGeeks/gfg_reverse_linkedlist_using_stacks.c)) |
 
 ## Problems
 
@@ -114,16 +123,12 @@ Problems from external platforms, organised by source. Only solution code is sto
 
 See [PROBLEMS.md](PROBLEMS.md) for the full list with approaches and links.
 
----
-
 ## Language and Style
 
 - Language: **C**
 - LLVM code style via `.clang-format`
 - Compiled with Clang
 - Some files have multiple solutions showing how the approach changed as I understood the problem better
-
----
 
 ## Legal
 
@@ -135,13 +140,9 @@ Problem statements on competitive programming platforms are copyrighted by their
 
 Problem links may be included for external reference without reproducing any platform content.
 
----
-
 ## License
 
 MIT - free to use, study, and modify. See [LICENSE](LICENSE) for details.
-
----
 
 ## About
 
