@@ -1,7 +1,5 @@
 # Problems
 
-## Note
-
 Solutions here are written to pass test cases, not to be production-ready code. When you submit to LeetCode or GeeksForGeeks, the platform calls your function directly with valid inputs, so some things that matter in real C programs are intentionally skipped:
 
 - `free()` - the platform cleans up memory after each test run, so freeing manually isn't needed

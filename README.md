@@ -109,8 +109,6 @@ Advanced algorithms and applications using the implemented data structures.
 | [`length_of_list.c`](LinkedList/extra/length_of_list.c) | Linked List | Length of a linked list |
 | [`floyd_cycle_detection.c`](LinkedList/extra/floyd_cycle_detection.c) | Linked List | Cycle detection - Floyd's tortoise and hare |
 | [`middle_node.c`](LinkedList/extra/middle_node.c) | Linked List | Find middle node using slow/fast pointers |
-| [`reverse_string.c`](Stacks/extra/reverse_string.c) | Stack | Reverse a string using stack (see also [GFG solution](Problems/GeeksForGeeks/gfg_reverse_string_using_stacks.c)) |
-| [`reverse_linkedlist.c`](Stacks/extra/reverse_linkedlist.c) | Stack | Reverse a linked list using stack (see also [GFG solution](Problems/GeeksForGeeks/gfg_reverse_linkedlist_using_stacks.c)) |
 
 ## Problems
 
