@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 100
+#define SIZE 7
 int tree[SIZE];
 
 void init() {
@@ -26,20 +26,21 @@ void insertRight(int pIndex, int value) {
 void display() {
     for (int i = 0; i < SIZE; i++) {
         if (tree[i] != -1)
-            printf("Index %d = %d\n", i, tree[i]);
+            printf("%d ", tree[i]);
     }
 }
 
 int main() {
     init();
-    insertRoot(15);
 
-    insertLeft(0, 30);
-    insertRight(0, 24);
-    insertLeft(1, 50);
-    insertRight(1, 40);
+    insertRoot(1);
 
-    insertRight(2, 74);
+    insertLeft(0, 2);
+    insertRight(0, 3);
+    insertLeft(1, 4);
+    insertRight(1, 5);
+
+    insertRight(2, 6);
 
     display();
     return 0;
